@@ -4,17 +4,17 @@
 <head>
     <meta charset="UTF-8">
     <title>Full Stack Eletro</title>
-    <link rel="stylesheet" href="../CSS/Estilo.css">
+    <?php
+    echo '<link rel="stylesheet" href="../CSS/Estilo.css">';
+    ?>
 </head>
 
 <body>
+
     <!-- Inicio do menu -->
-        <nav class="barraMenu">
-            <a href="Index.html"><img src="../IMG/Logo2.png" alt="Página Inicial"></a>
-            <a href="Produtos.html"><img src="../IMG/Produtos.png" alt="Produtos"></a>
-            <a href="Loja.html"><img src="../IMG/Lojas.png" alt="Lojas"></a>
-            <a href="Contatos.html"><img src="../IMG/Contato.png" alt="Contato"></a>   
-        </nav>
+      <?php
+        include_once('Menu.html');
+      ?>
     <!-- Fim do menu -->
 
     <main class="textoPagina">
