@@ -51,16 +51,13 @@ DROP TABLE IF EXISTS `pedidos`;
 /*!40101 SET @saved_cs_client     = @@character_set_client */;
 /*!40101 SET character_set_client = utf8 */;
 CREATE TABLE `pedidos` (
-  `id_pedidos` int(11) NOT NULL AUTO_INCREMENT,
-  `cliente` varchar(45) NOT NULL,
-  `endereco` varchar(150) NOT NULL,
-  `telefone` varchar(20) NOT NULL,
-  `produto` varchar(100) NOT NULL,
-  `valorUni` decimal(8,2) NOT NULL,
-  `quantidade` int(11) NOT NULL,
-  `valorTotal` decimal(8,2) NOT NULL,
-  PRIMARY KEY (`id_pedidos`)
-) ENGINE=InnoDB AUTO_INCREMENT=5 DEFAULT CHARSET=utf8mb4;
+  `id` int(11) NOT NULL AUTO_INCREMENT,
+  `nome` varchar(100) NOT NULL,
+  `endereco` varchar(300) NOT NULL,
+  `pedido` varchar(300) NOT NULL,
+  `data` datetime DEFAULT current_timestamp(),
+  PRIMARY KEY (`id`)
+) ENGINE=InnoDB AUTO_INCREMENT=7 DEFAULT CHARSET=utf8;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -69,7 +66,7 @@ CREATE TABLE `pedidos` (
 
 LOCK TABLES `pedidos` WRITE;
 /*!40000 ALTER TABLE `pedidos` DISABLE KEYS */;
-INSERT INTO `pedidos` VALUES (1,'Felipe','Rua silas 130','970330774','Geladeira Frost Free Brastemp Side Inverse 540 litros',5019.00,1,5019.00),(2,'Beth','Rua Andrade 15','912345678','Fogão de Piso 4 Bocas Atlas Monaco com Acendimento Automático',519.70,1,519.70),(3,'Carol','Rua das figueiras 121','985234179','Lavadora de Roupas Philco inverter 12KG',2179.90,1,2179.90),(4,'Denis','Rua Amelia 33','23342659','Lava-Louça Compacta 8 Serviços Branca 127V Brastemp',1730.61,2,3461.22);
+INSERT INTO `pedidos` VALUES (5,'Felipe','Rua silas','Geladeira Frost Free Brastemp','2020-11-03 12:15:58'),(6,'Marcos','Rua abraao','1 Micro-ondas 20 Litros Electrolux Branco','2020-11-03 12:18:59');
 /*!40000 ALTER TABLE `pedidos` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -110,4 +107,4 @@ UNLOCK TABLES;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2020-11-02 15:51:39
+-- Dump completed on 2020-11-03 12:20:46
