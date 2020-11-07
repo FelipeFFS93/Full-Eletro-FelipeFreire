@@ -2,7 +2,9 @@ body {
     font-family: Arial, Helvetica, sans-serif;
 }
 
-/* Barra superior da pagina */
+.container {
+    text-align: center;
+}
 
 .barraMenu {
     background-color: rgb(236, 28, 36);  
@@ -17,30 +19,8 @@ body {
     padding-left: 30px;
 }
 
-/* Texto da index */
-
-.textoPagina {
-    padding-top: 50px;
-}
-
 /* Formas de pagamento */
 
-.divPagamentos {
-    text-align: center;
-}
-
-.divPagamentos h4 {
-    color: red;
-}
-
-#idPagamentos {
-    text-align: center;
-    padding-top: 10%;
-}
-
-#idPagamentos h4 {
-    color: red;
-}
 
 .imgPagamentos {
     width: 25%;
@@ -48,9 +28,6 @@ body {
 
 /* Menu lojas */
 
-.nossasLojas {
-   text-align: center;
-}
 
 .lojas {
     display: inline-block;
@@ -59,24 +36,10 @@ body {
 
 /* Contatos */
 
-.contato {
-    text-align: center;
-    margin-top: 10px;
-}
-
-.email {
-    display: inline-block;
-    padding-right: 25px;
-}
-
 .email img {
     width: 50px;
 }
 
-.whatsapp {
-    display: inline-block;  
-    padding-left: 25px;
-}
 
 .whatsapp img {
     width: 50px;
@@ -84,10 +47,6 @@ body {
 
 /* Formulario */
 
-form {
-    text-align: center;
- 
-}
 
 .inputNome {
     width: 400px;
@@ -99,25 +58,22 @@ form {
     height: 40px;
 }
 
-.botao {
-    margin-top: 10px;
-    width: 100px;
-    height: 30px;
-}
-
 /* Menu de produtos */
 
 .categorias {
     width: 220px;
     position: absolute;
+
 }
 
 ul, li {
     padding-left: 10px;
     cursor: pointer;
+    list-style: none;
 }
 
 /* Produtos */
+
 
 .caixaProdutos {
     display: inline-block;
@@ -132,9 +88,6 @@ ul, li {
 .imgItens {
     width: 120px;
     cursor: pointer;
-}
-.preco {
-    color: red;
 }
 
 .precoRiscado {
